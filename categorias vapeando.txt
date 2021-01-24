@@ -1,0 +1,32 @@
+CATEGORIAS
+	KIts Pro
+	Kits de inicio
+	Pod's
+	Pod's desechables
+	Esencias Premium
+	Accesorios/herramientas
+
+SUBCATEGORIAS
+	KIts Pro
+		tanques
+		mod's
+		resistencias reparables
+	Kits de inicio
+		varias marcas
+	pod's
+		varias marcas
+	Pod's desechables
+		varias marcas
+	esencias
+		frutales
+		mentoladas
+		pasteles
+		mixtas
+	accesorios/herramientas
+		vidrios
+		resistencias
+		resistencias reparables
+		algodones
+		boquillas
+		alambres
+		gomas protectoras

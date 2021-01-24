@@ -1,0 +1,183 @@
+$color_primary: #456268;
+$color_light: #d2eaf4;
+$general_fount: 'Lora', serif;
+
+body {
+	background: $color_light;
+	font-family: $general_fount
+}
+header {
+	background: $color_primary;
+	a {
+		color: $color_light;
+		&:hover {
+			color: $color_light;
+			box-shadow: 5px 5px 10px $color_light;
+			transition: all 0.4s;
+		}
+	}
+	nav {
+		ul {
+			li {
+				a {
+					border-bottom: 3px solid $color_light;
+					padding-bottom: 20px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+.logo {
+	width: 100%;
+}
+.bg {
+	background: linear-gradient($color_primary, $color_light);
+}
+.titulo-main {
+	padding: 5px;
+	background-color: $color_primary;
+	color: $color_light;
+	width: 70%;
+	font-size: 2vw;
+}
+ul {
+	button {
+		background-color: $color_light;
+		padding: 5px 5px;
+		margin-right: 10px;
+		font-size: 16px;
+		cursor: pointer;
+		border-color: $color_primary;
+		color: $color_primary;
+		border-radius: 10%;
+		&:hover {
+			background-color: $color_primary;
+			color: $color_light;
+			transition: all 0.4s;
+		}
+	}
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.foot_item {
+	color: $color_light;
+	padding-top: 40px;
+	margin-bottom: 20px;
+}
+footer {
+	width: 100%;
+	background-color: $color_primary;
+	min-height: 250px;
+	padding: 10px 0px 25px 0px;
+	p {
+		font-size: 13px;
+		color: $color_light;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+	}
+}
+.footer_ul {
+	margin: 0px;
+	list-style-type: none;
+	font-size: 14px;
+	padding: 0px 0px 10px 0px;
+	li {
+		padding: 0px 0px 5px 0px;
+		a {
+			color: $color_light;
+			&:hover {
+				color: #000;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.foot_borde {
+	border-bottom: 3px solid $color_light;
+	padding-bottom: 20px;
+}
+.social_footer_ul {
+	display: table;
+	margin: 15px auto 0 auto;
+	list-style-type: none;
+	li {
+		padding-left: 20px;
+		padding-top: 10px;
+		float: left;
+		a {
+			color: $color_light;
+			border: 1px solid $color_light;
+			padding: 8px;
+			border-radius: 50%;
+			&:hover {
+				color: $color_primary;
+				background-color: $color_light;
+			}
+		}
+		i {
+			width: 20px;
+			height: 20px;
+			text-align: center;
+		}
+	}
+}
+.modal-estilo {
+	color: $color_primary;
+	background-color: $color_light;
+}
+.btn-modal {
+	background-color: $color_light;
+	padding: 5px 5px;
+	margin-right: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	border-color: $color_primary;
+	color: $color_primary;
+	border-radius: 10%;
+	width: 100%;
+	&:hover {
+		background-color: $color_primary;
+		color: $color_light;
+	}
+}
+.sidebar-container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 20px;
+	min-height: 50vh;
+	background-color: $color_primary;
+	color: $color_light;
+	.menu {
+		width: 18rem;
+	}
+}
