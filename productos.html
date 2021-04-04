@@ -51,6 +51,7 @@
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <button type="button" data-toggle="modal" data-target="#modalLogin">ingresar</button>
                     <button type="button" data-toggle="modal" data-target="#modalRegistro">Crear Cuenta</button>
+                    <button type="button" data-toggle="modal" data-target="#modalCarrito">Mi Carrito <i class="fa fa-cart-plus"></i></button>
                 </ul>
             </div>
         </nav>
@@ -183,6 +184,47 @@
         </div>
     </div>
     <!-- Fin modal Registro -->
+
+    <!-- Modal Carrito -->
+    <div class="modal fade carrito" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-estilo">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Mis Productos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="cart transition is-open">
+                    <!-- titulos -->
+                    <div class="layout-inline row th">
+                        <div style="margin-left: 10px;" class="col col-pro">Producto</div>
+                        <div class="col col-price align-center ">Precio</div>
+                        <div class="col col-qty align-center">Cantidad</div>
+                        <div class="col">SubTotal</div>
+                    </div>
+                    <div id="tablacarrito" class="table">
+                        
+                        <!-- productos -->
+                        <div class="layout-inline row">
+                            <!-- cada producto -->
+                            
+                        </div>
+
+                        
+                    </div>
+                    <div class="tf">
+                        <div class="row layout-inline">
+                        <div class="col">
+                        <p>Total</p>
+                        </div>
+                        <div id="totalcarrito" class="col"></div>
+                    </div>         
+                </div>
+            </div>
+        </div>         
+    </div>
+    <!-- Fin modal Carrito -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

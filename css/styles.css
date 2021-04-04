@@ -154,3 +154,168 @@ footer {
   color: #d2eaf4; }
   .sidebar-container .menu {
     width: 18rem; }
+
+
+    /* Carrito */
+    
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    
+    .shopper {
+      margin-top: 20px;
+      font: 2em 'Shopper', sans-serif;
+      line-height: 0.5em;
+      display: inline-block;
+    }
+  
+    .carrito{
+        font: 62.5%/1.5em "Trebuchet Ms", helvetica;
+    }
+    
+    .imgcarrito {
+      max-width: 9em;
+      width: 100%;
+      overflow: hidden; 
+      margin-right: 1em;
+    }
+    
+    
+    
+    .heading {
+      margin-top: 20px;
+      padding: 1em;
+      position: relative;
+      z-index: 1;
+      color: #f7f7f7;
+      background: #456268;
+    }
+    
+    .cart {
+      margin: 2.5em;
+      overflow: hidden;
+    }
+    
+    .cart.is-closed {
+      height: 0;
+      margin-top: -2.5em;
+    }
+    
+    .table {
+      background: #ffffff;
+      border-radius: 0.6em;
+      overflow: hidden;
+      clear: both;
+      margin-bottom: 1.8em;
+    }
+    
+    
+    .layout-inline > * {
+      display: inline-block;
+    }
+    
+    .align-center {
+      text-align: center;
+    }
+    
+    .th {
+      background: #456268;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    
+    .tf {
+      background: #456268;
+      text-transform: uppercase;
+      text-align: right;
+      font-size: 1.2em;  
+    }
+    
+    .tf p {
+      color: #fff;
+      font-weight: bold;
+    }
+    
+    .col {
+      padding: 1em;
+      width: 12%;
+    }
+    
+    .col-pro {
+      width: 44%;
+    }
+    
+    .col-pro > * {
+      vertical-align: middle;
+    }
+    
+    .col-qty {
+      text-align: center;
+      width: 17%;
+    }
+    
+    .col-numeric p {
+      font: bold 1.8em helvetica;
+    }
+    
+    .col-total p {
+      color: #12c8b1;
+    }
+    
+    .tf .col {
+      width: 20%;
+    }
+    
+    .row > div {
+      vertical-align: middle;
+    }
+    
+    .row-bg2 {
+      background: #f7f7f7;
+    }
+    
+    .visibility-cart {
+      position: absolute;
+      color: #fff;
+      top: 0.5em;
+      right: 0.5em;
+      font:  bold 2em arial;
+      border: 0.16em solid #fff;
+      border-radius: 2.5em;
+      padding: 0 0.22em 0 0.25em ;
+    }
+    
+    .col-qty > * {
+      vertical-align: middle; 
+    }
+    
+    .col-qty > input {
+      max-width: 2.6em;
+    }
+    
+    .transition {
+      transition: all 0.3s ease-in-out;
+    }
+    
+    @media screen and ( max-width: 755px) {
+      .container {
+        width: 98%;
+      }
+      
+      .col-pro {
+        width: 35%;
+      }
+      
+      .col-qty {
+        width: 22%;
+      }
+      
+      img {
+        max-width: 100%;
+        margin-bottom: 1em;
+      }
+    }
