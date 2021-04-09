@@ -12,7 +12,6 @@ function agregarCarrito(pos){
     let productosCarrito=[];
     if (localStorage.getItem('productos')){
         productosCarrito = JSON.parse(localStorage.getItem('productos'));
-        console.log(productosCarrito);
         productosCarrito.push({
             id:productos[pos].id,
             nombre:productos[pos].nombre,
@@ -116,7 +115,7 @@ function pintarProductos(){
                             <div class="col">
                                 <div class="profile-overview">
                                     <p id="add${i}">ADD</p>
-                                    <a class="btn btn-info" onclick="agregarCarrito(${i})" type="button"><i class="fa fa-cart-plus"></i></a>
+                                    <a class="btn-agregar btn btn-info" onclick="agregarCarrito(${i})" type="button"><i class="fa fa-cart-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -130,6 +129,13 @@ function pintarProductos(){
 
 
 $(document).ready(function(){
+
+    $('.btn-agregar').click(e=>{
+        let hijos = $(e.target).parent().children();
+        console.log(hijos[0].value);
+        $(e.target).parent().slideUp("slow");
+    })
+
     crearProductos();
     pintarProductos();
 
