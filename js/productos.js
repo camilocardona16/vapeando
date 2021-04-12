@@ -131,9 +131,9 @@ function pintarProductos(){
 $(document).ready(function(){
     
     //peticion a una apid e paises.
-    $.get('https://ciudades.digit4l.co/api/countries',function(res){
-        console.log(res);
-    });
+    // $.get('https://ciudades.digit4l.co/api/countries',function(res){
+    //     console.log(res);
+    // });
 
     $('.btn-agregar').click(e=>{
         let hijos = $(e.target).parent().children();
