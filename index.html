@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -48,9 +49,10 @@
                         <a class="nav-link" href="contacto.html"><strong>Contacto</strong></a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <button type="button" data-toggle="modal" data-target="#modalLogin">ingresar</button>
-                    <button type="button" data-toggle="modal" data-target="#modalRegistro">Crear Cuenta</button>
+                <ul id="lista-botones" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <!-- <button id="btn-ingresar" type="button" data-toggle="modal" data-target="#modalLogin">ingresar</button> -->
+                    <button id="btn-crear" type="button" data-toggle="modal" data-target="#modalRegistro">Crear Cuenta</button>
+                    <button type="button" data-toggle="modal" data-target="#modalCarrito">Mi Carrito <i class="fa fa-cart-plus"></i></button>
                 </ul>
             </div>
         </nav>
@@ -105,119 +107,23 @@
                     </div>
                 </div>
             </div>
+            <a href="#carrousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only" aria-hidden="true">Prev</span>
+            </a>
+            <a href="#carrousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only" aria-hidden="true">Next</span>
+            </a>
         </div>
-        <a href="#carrousel" class="carousel-control-prev" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="sr-only" aria-hidden="true">Prev</span>
-        </a>
-        <a href="#carrousel" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="sr-only" aria-hidden="true">Next</span>
-        </a>
         <h3 class="titulo-main">Productos Mas vendidos</h3>
+        
+            <!-- Productos -->
+            <div class="row" id="campodestacados">
+                
+            </div>
+            <!-- Fin productos -->
 
-
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <hr>
-                <div class="profile-card-4 text-center">
-                    <a href=""> <img src="images/va1.jpg" class="img img-responsive"></a>
-                    <div class="profile-content">
-                        <div class="profile-name">VOOPOO | ALPHA ZIP KIT</div>
-                        <div class="profile-description"> ALPHA ZIP KIT, EQUIPOS, KITS DE INICIO, OUTLET, OUTLET-EQUIPOS, VOOPOO</div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>Precio</p>
-                                    <h4>$249.900</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>Puntuacion</p>
-                                    <h4>10/10</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>ADD</p>
-                                    <a href="#">
-                                        <h4><i class="fa fa-cart-plus" aria-hidden="true"></i></h4>
-                                    </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <hr>
-                <div class="profile-card-4 text-center">
-                    <a href=""> <img src="images/va2.jpg" class="img img-responsive"></a>
-                    <div class="profile-content">
-                        <div class="profile-name">VOOPOO | ARGUS 40W POD MOD</div>
-                        <div class="profile-description"> ARGUS 40W POD MOD, EQUIPOS, NUEVO, NUEVO-EQUIPOS, POD MOD, VOOPOO</div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>Precio</p>
-                                    <h4>$249.900</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>Puntuacion</p>
-                                    <h4>10/10</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>ADD</p>
-                                    <a href="#">
-                                        <h4><i class="fa fa-cart-plus" aria-hidden="true"></i></h4>
-                                    </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <hr>
-                <div class="profile-card-4 text-center">
-                    <a href=""> <img src="images/va3.jpg" class="img img-responsive"></a>
-                    <div class="profile-content">
-                        <div class="profile-name">VOOPOO | ARGUS AIR POD KIT</div>
-                        <div class="profile-description"> ARGUS AIR POD KIT, EQUIPOS, NUEVO, NUEVO-EQUIPOS, POD SYSTEM, VOOPOO</div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>Precio</p>
-                                    <h4>$169.900</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>Puntuacion</p>
-                                    <h4>10/10</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="profile-overview">
-                                    <p>ADD</p>
-                                    <a href="#">
-                                        <h4><i class="fa fa-cart-plus" aria-hidden="true"></i></h4>
-                                    </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <!-- Fin contenido -->
 
@@ -306,36 +212,92 @@
                 <div class="modal-header text-center">
                     <h4 class="modal-title w-100 font-weight-bold">Crear Cuenta</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-body mx-3">
-                    <div class="md-form mb-5">
-                        <label data-error="wrong" data-success="right" for="orangeForm-name"><i class="fas fa-user prefix grey-text"></i> Usuario</label>
-                        <input type="text" id="orangeForm-name" class="form-control validate">
+                <form action="index.html">
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <label data-error="wrong" data-success="right" for="userCrear"><i class="fas fa-user prefix grey-text"></i> Usuario</label>
+                            <input type="text" id="userCrear" class="form-control validate" required>
+                        </div>
+                        <div class="md-form mb-5">
+                            <label data-error="wrong" data-success="right" for="correoCrear"><i class="fas fa-envelope prefix grey-text"></i> Correo</label>
+                            <input type="email" id="correoCrear" class="form-control validate" required>
+                        </div>
+                        <div class="md-form mb-4">
+                            <label data-error="wrong" data-success="right" for="claveCrear"><i class="fas fa-lock prefix grey-text"></i>Clave</label>
+                            <input type="password" id="claveCrear" class="form-control validate" required>
+                        </div>
                     </div>
-                    <div class="md-form mb-5">
-                        <label data-error="wrong" data-success="right" for="orangeForm-email"><i class="fas fa-envelope prefix grey-text"></i> Correo</label>
-                        <input type="email" id="orangeForm-email" class="form-control validate">
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-modal" onclick="crearCuenta()">Sign up</button>
                     </div>
-                    <div class="md-form mb-4">
-                        <label data-error="wrong" data-success="right" for="orangeForm-pass"><i class="fas fa-lock prefix grey-text"></i>Clave</label>
-                        <input type="password" id="orangeForm-pass" class="form-control validate">
-                    </div>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-modal">Sign up</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
     <!-- Fin modal Registro -->
-    <!-- Optional JavaScript -->
-    <script src="js/carrousel-nuevos.js"></script>
+
+    <!-- Modal Carrito -->
+    <div class="modal fade carrito" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-estilo">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Mis Productos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="cart transition is-open">
+                    <!-- titulos -->
+                    <div class="layout-inline row th">
+                        <div style="margin-left: 10px;" class="col col-pro">Producto</div>
+                        <div class="col col-price align-center ">Precio</div>
+                        <div class="col col-qty align-center">Cantidad</div>
+                        <div class="col">SubTotal</div>
+                    </div>
+                    <div id="tablacarrito" class="table">
+                        
+                        <!-- productos -->
+                        <div class="layout-inline row">
+                            <!-- cada producto -->
+                            
+                        </div>
+
+                        
+                    </div>
+                    <div class="tf">
+                        <div class="row layout-inline">
+                            <div class="col col-total col-numeric">
+                                <p>Total:</p>
+                            </div>
+                        <div id="totalcarrito" style="margin-right: 10px;">
+
+                        </div>
+                        <div class="col" style="margin-right: 10px;">
+                            <button class="btn btn-success" onclick="pagar();">Pagar</button>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>         
+    </div>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- scripts carrito y productos -->
+    <script src="js/main_productos.js"></script>
+    <script src="js/productos_destacados.js"></script>
+    <script src="js/carrito.js"></script>
+
+    <!-- scripts user -->
+    <script src="js/usuario.js"></script>
+    <script src="js/gestion_usuario.js"></script>
 
 </body>
 
