@@ -1,9 +1,27 @@
 let productos=[];
 
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
 function crearProductos(){
-    productos.push(new Producto(5,'VOOPOO | ALPHA ZIP KIT',249900,'images/va1.jpg','ALPHA ZIP KIT, EQUIPOS, KITS DE INICIO, OUTLET, OUTLET-EQUIPOS, VOOPOO',10));
-    productos.push(new Producto(6,'VOOPOO | ARGUS 40W POD MOD',249900,'images/va2.jpg','ARGUS 40W POD MOD, EQUIPOS, NUEVO, NUEVO-EQUIPOS, POD MOD, VOOPOO',10));
-    productos.push(new Producto(7,'VOOPOO | ARGUS AIR POD KIT',169900,'images/va3.jpg','ARGUS AIR POD KIT, EQUIPOS, NUEVO, NUEVO-EQUIPOS, POD SYSTEM, VOOPOO',10));
+    readTextFile("productos.json", function(text){
+        var data = JSON.parse(text);
+        for (let i = 0; i < data.length; i++) {
+            //solo agrega si el producto esta destacado
+            if(data[i].destacado==true){
+                productos.push(new Producto(data[i].id,data[i].nombre,data[i].precio,data[i].imagen,data[i].descripcion,data[i].puntuacion,data[i].destacado));            
+            }
+        }
+    });
 }
 // pinta los productos en el html
 function pintarProductos(){
