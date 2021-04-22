@@ -1,12 +1,13 @@
 // CLASE DE PRODUCTO
 class Producto{
-    constructor(id,nombre,precio,imagen,descripcion,puntuacion){
+    constructor(id,nombre,precio,imagen,descripcion,puntuacion,destacado){
         this.id=id;
         this.nombre=nombre;
         this.precio=precio;
         this.imagen=imagen;
         this.descripcion=descripcion;
         this.puntuacion=puntuacion;
+        this.destacado=destacado
     }    
 }
 $(document).ready(function(){

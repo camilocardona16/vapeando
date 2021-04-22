@@ -7,6 +7,7 @@ function crearProductos(){
 }
 // pinta los productos en el html
 function pintarProductos(){
+    console.log(productos);
     let contenedor=document.getElementById('campodestacados');
     let html='';
     for(let i=0;i<productos.length;i++){

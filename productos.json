@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "nombre":"GREEN JOKER",
+        "precio":60000,
+        "imagen":"images/es1.jpg",
+        "descripcion":"FREE BASE, FRUTAL, GREEN JOKER, LIQUIDOS, REFRESCANTE",
+        "puntuacion":10,
+        "destacado":false
+    },
+    {
+        "id":2,
+        "nombre":"KING’S CROWN",
+        "precio":60000,
+        "imagen":"images/es2.jpg",
+        "descripcion":"FREE BASE, FRUTAL, KING'S CROWN, LIQUIDOS, OUTLET, OUTLET-LIQUIDOS, REFRESCANTE",
+        "puntuacion":10,
+        "destacado":false
+    },
+    {
+        "id":3,
+        "nombre":"DINNER LADY | APPLE SOURS ICE SALTS",
+        "precio":59900,
+        "imagen":"images/es3.jpg",
+        "descripcion":"APPLE SOURS ICE SALTS, DINNER LADY, FRUTAL, LIQUIDOS, MENTOLADO, NUEVO, NUEVO-LIQUIDOS, SALES DE NICOTINA, SALES DE NICOTINA-DINNER LADY",
+        "puntuacion":10,
+        "destacado":false
+    },
+    {
+        "id":4,
+        "nombre":"DINNER LADY | BUBBLE TROUBLE ICE SALTS",
+        "precio":60000,
+        "imagen":"images/es4.jpg",
+        "descripcion":"APPLE SOURS ICE SALTS, DINNER LADY, FRUTAL, LIQUIDOS, MENTOLADO, NUEVO, NUEVO-LIQUIDOS, SALES DE NICOTINA, SALES DE NICOTINA-DINNER LADY",
+        "puntuacion":10,
+        "destacado":false
+    },
+    {
+        "id":5,
+        "nombre":"VOOPOO | ALPHA ZIP KIT",
+        "precio":249900,
+        "imagen":"images/va1.jpg",
+        "descripcion":"ALPHA ZIP KIT, EQUIPOS, KITS DE INICIO, OUTLET, OUTLET-EQUIPOS, VOOPOO",
+        "puntuacion":10,
+        "destacado":true
+    },
+    {
+        "id":6,
+        "nombre":"VOOPOO | ARGUS 40W POD MOD",
+        "precio":249900,
+        "imagen":"images/va2.jpg",
+        "descripcion":"ARGUS 40W POD MOD, EQUIPOS, NUEVO, NUEVO-EQUIPOS, POD MOD, VOOPOO",
+        "puntuacion":10,
+        "destacado":true
+    },
+    {
+        "id":7,
+        "nombre":"VOOPOO | ARGUS AIR POD KIT",
+        "precio":169900,
+        "imagen":"images/va3.jpg",
+        "descripcion":"ARGUS AIR POD KIT, EQUIPOS, NUEVO, NUEVO-EQUIPOS, POD SYSTEM, VOOPOO",
+        "puntuacion":10,
+        "destacado":true
+    }
+]
